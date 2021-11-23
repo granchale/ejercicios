@@ -1,0 +1,561 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tabla</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		header{
+			align-content: center;
+			color: #F2F2F2;
+			font-size: 35PX;
+			text-align: center
+		}
+		header, nav, main, footer{
+			width: 960px;
+			/*height: 100px;*/
+			background-color: #FFC529;
+			padding: 7px;
+			margin: 0 auto;
+		}
+		nav{
+			height: 70px;
+		}
+		header{
+			background-color: #FE724C;
+			align-content: center;
+		}
+		footer{
+			background-color: #FE724C;
+			color: #F2F2F2;
+			align-content: center;
+			text-align: center
+		}
+		h2{
+			color:#272D2F;
+		}
+		section{
+			margin: 20px 50px;
+			width: 760px;
+			height: auto;
+			background-color: #DCDCDC;
+			margin: 20px auto;
+			padding: 20px 20px;
+		}
+		main{
+			background-color:#272D2F;
+			height: auto;
+		}
+		table{
+		background-color: #F2F2F2;
+		color: #fe724C;
+		}
+		#t01, #t01 th, #t01 td, #t02, #t02 th, #t02 td{
+			border-collapse: collapse
+		}
+		#t01, #t01 th, #t01 td{
+			border: 2px solid #FFC529;
+			padding: 5px;
+		}
+		#t01 th{
+			background-color: #FFC529;
+			color: #FE724C;
+			text-align:inherit;
+		}
+		#t02, #t02 th, #t02 td{
+			border border-spacing: inherit solid #FE724C;
+			padding: 5px;
+		}
+		#t02 th{
+			background-color: #272D2F;
+			text-align: inherit;
+			color: #F2F2F2;
+		}
+		#t03 tr:nth-child(even){
+			background-color: #FFC529;
+			color: #FE724C;
+		}
+		#t03 tr:nth-child(odd){
+			background-color: #272D2F;
+			color:#F2F2F2;
+		}
+		#t03 hr{
+			background-color: #F2F2F2;
+		}
+		#t04 td:nth-child(even){
+			background-color: #FFC529;
+			color: #FE724C;
+		}
+		#t04 td:nth-child(odd){
+			background-color: #272D2F;
+			color:#F2F2F2;
+		}
+		#t05 tr:hover{
+			background-color: #FFC529;
+			color:#272D2F;
+		}
+		#t05 th{
+			background-color: #272D2F;
+		}
+		#t05{
+			width: 660px;
+		}
+		#t05 th{
+			height: 50px;
+		}
+		#t05, #t05 th, #t05td{
+			border-collapse: collapse;
+		}
+		#t05 td{
+			height: 30px;
+			padding-left: 15px;
+			vertical-align: bottom;
+		}
+		#t06{
+			width: 100%;
+		}
+		#t06 th, #t06 td{
+			text-align: center;
+			border:1px solid #FFC529;
+			border-collapse: collapse;
+			height: 25px;
+		}
+		#t06,#t06 th, #t06 td{
+			border-collapse: collapse
+		}
+		#t06 td{
+			width: 200px;
+		}
+		nav ul {
+    		margin-left: 10px;
+    		
+		}
+		nav li{
+			display: inline-block;
+			margin-right: 10px;
+    		list-style-type: none;
+   			height: 25px;
+		}
+		a:link{
+			color: #FE724C;
+			text-decoration: none;
+			font-weigh: bolder;
+		}
+		a:visited{
+			color: #5F61C8;
+			text-decoration: none;
+			font-weight: bolder;
+		}
+		a:active{
+			color:#E04345;
+			text-decoration: none;
+			font-weight: bolder;
+		}
+		a:hover{
+			color: #F2F2F2;
+			font-weight: bolder;
+			text-decoration: none;
+		}
+	
+   
+}
+    </style>
+</head>
+
+<body>
+	<header>
+		<h1>TABLAS EN HTML</h1>
+	</header>
+	<nav>
+	  <ul>
+			<li><a href="mi_primera_pagina.html" target="new">Mi primera página</a></li>
+			<li><a href="listas.html" target="_blank">Listas</a></li>
+			<li><a href="Tablas.html">Tablas</a></li>
+			<li><a href="Enlaces.html">Enlaces</a></li>
+			<li><a href="imágenes.html">Imágenes</a></li>
+		</ul>
+		<ul>
+			<li><a href="#link-1">Tabla simple</a></li>
+			<li><a href="#link-2">Tabla con bordes colapsados</a></li>
+			<li><a href="#link-3">Tabla que abarca más de una comlumna</a></li>
+			<li><a href="#link-4">Tabla con bandas horizontales de diferente color</a></li>
+			<li><a href="#link-5">Tabla con bandas verticales de diferente color</a></li>
+			<li><a href="#link-6">Tabla con resaltado flotante</a></li>
+			<li><a href="#link-7">Tabla responsiva</a></li>
+		</ul>
+	</nav>
+<main>
+  <section>
+	<h2 id="link-1" >Tabla simple</h2>
+	<table border="1">
+			<thead>
+				<tr>
+				<th>Nombre</th>
+				<th>Dirección</th>
+				<th>teléfono</th>
+				</tr>
+				</thead>
+			<tbody>
+				<tr>
+					<td>Luz Barrera</td>
+					<td>Callle Flores 23</td>
+					<td>2342378</td>
+				</tr>
+				<tr>
+					<td>Ailin Rodriguez</td>
+					<td>Av MArgaritas 6578</td>
+					<td>2222235788</td>
+				</tr>
+				<tr>
+					<td>Fabiloa Gracía</td>
+					<td>Priv 9 Poniente 702</td>
+					<td>2548931525</td>
+				</tr>
+				<tr>
+					<td>Yessica Robles </td>
+					<td>5 sur 120</td>
+					<td>651855523</td>
+				</tr>
+				<tr>
+					<td>Sarah Fernández</td>
+					<td>4poniente 605</td>
+					<td>586224522</td>
+				</tr>
+			</tbody>
+			<tfoot></tfoot>
+			</table>
+	</section>
+<section>
+    <h2 id="link-2">Tabla con bordes colapsados</h2>
+		  <table id= "t01" border="1">
+		    <thead>
+		      <tr>
+		        <th>Nombre</th>
+		        <th>Dirección</th>
+		        <th>teléfono</th>
+	          </tr>
+	        </thead>
+		    <tbody>
+		      <tr>
+		        <td>Luz Barrera</td>
+		        <td>Callle Flores 23</td>
+		        <td>2342378</td>
+	          </tr>
+		      <tr>
+		        <td>Ailin Rodriguez</td>
+		        <td>Av MArgaritas 6578</td>
+		        <td>2222235788</td>
+	          </tr>
+		      <tr>
+		        <td>Fabiloa Gracía</td>
+		        <td>Priv 9 Poniente 702</td>
+		        <td>2548931525</td>
+	          </tr>
+		      <tr>
+		        <td>Yessica Robles </td>
+		        <td>5 sur 120</td>
+		        <td>651855523</td>
+	          </tr>
+		      <tr>
+		        <td>Sarah Fernández</td>
+		        <td>4poniente 605</td>
+		        <td>586224522</td>
+	          </tr>
+	        </tbody>
+		    <tfoot>
+	        </tfoot>
+	      </table>
+  </section>
+		<section>
+		  <h2 id="link-3">Tabla que abarca más de una columna</h2>
+		  <table id= "t02" border="1">
+		    <thead>
+		      <tr>
+		        <th>Nombre</th>
+		        <th>Dirección</th>
+		        <th colspan="2">teléfono</th>
+	          </tr>
+	        </thead>
+		    <tbody>
+		      <tr>
+		        <td>Luz Barrera</td>
+		        <td>Callle Flores 23</td>
+		        <td>2342378</td>
+				 <td>2227458753</td>
+	          </tr>
+		      <tr>
+		        <td>Ailin Rodriguez</td>
+		        <td>Av MArgaritas 6578</td>
+		        <td>2222235788</td>
+				<td>22147598</td>
+	          </tr>
+		      <tr>
+		        <td>Fabiloa Gracía</td>
+		        <td>Priv 9 Poniente 702</td>
+		        <td>2548931525</td>
+				 <td>2541369874</td>
+	          </tr>
+		      <tr>
+		        <td>Yessica Robles </td>
+		        <td>5 sur 120</td>
+		        <td>651855523</td>
+				<td>5412369874</td>
+	          </tr>
+		      <tr>
+		        <td>Sarah Fernández</td>
+		        <td>4poniente 605</td>
+		        <td>586224522</td>
+				<td>5478963214</td>
+	          </tr>
+	        </tbody>
+		    <tfoot>
+	        </tfoot>
+	      </table>
+  </section>
+  <section>
+          <h2 id="link-4">Tabla con bandas horizontales de diferente color</h2>
+          <table id= "t03" border="1">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Dirección</th>
+                <th>teléfono</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Luz Barrera</td>
+                <td>Callle Flores 23</td>
+                <td>2342378</td>
+              </tr>
+              <tr>
+                <td>Ailin Rodriguez</td>
+                <td>Av MArgaritas 6578</td>
+                <td>2222235788</td>
+              </tr>
+              <tr>
+                <td>Fabiloa Gracía</td>
+                <td>Priv 9 Poniente 702</td>
+                <td>2548931525</td>
+              </tr>
+              <tr>
+                <td>Yessica Robles </td>
+                <td>5 sur 120</td>
+                <td>651855523</td>
+              </tr>
+              <tr>
+                <td>Sarah Fernández</td>
+                <td>4poniente 605</td>
+                <td>586224522</td>
+              </tr>
+            </tbody>
+            <tfoot>
+            </tfoot>
+          </table>
+  </section>
+  <section>
+    <h2 id="link-5">Tabla con bandas verticales de diferente color</h2>
+          <table id= "t04" border="1">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Dirección</th>
+                <th>teléfono</th>
+                <th>Ciudad</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Luz Barrera</td>
+                <td>Callle Flores 23</td>
+                <td>2342378</td>
+                <td>Puebla</td>
+              </tr>
+              <tr>
+                <td>Ailin Rodriguez</td>
+                <td>Av MArgaritas 6578</td>
+                <td>2222235788</td>
+                <td>Puebla</td>
+              </tr>
+              <tr>
+                <td>Fabiloa Gracía</td>
+                <td>Priv 9 Poniente 702</td>
+                <td>2548931525</td>
+                <td>Puebla</td>
+              </tr>
+              <tr>
+                <td>Yessica Robles </td>
+                <td>5 sur 120</td>
+                <td>651855523</td>
+                <td>Puebla</td>
+              </tr>
+              <tr>
+                <td>Sarah Fernández</td>
+                <td>4poniente 605</td>
+                <td>586224522</td>
+                <td>Puebla</td>
+              </tr>
+              <tr>
+                <td>Pedro Fernández</td>
+                <td>4poniente 605</td>
+                <td>586224522</td>
+                <td>Puebla</td>
+              </tr>
+            </tbody>
+            <tfoot>
+            </tfoot>
+          </table>
+  </section>
+  <section>
+    <h2 id:="link-6">Tabla con resaltado flotante</h2>
+    <table id= "t05" border="1">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Dirección</th>
+          <th>teléfono</th>
+          <th>Ciudad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Luz Barrera</td>
+          <td>Callle Flores 23</td>
+          <td>2342378</td>
+          <td>Puebla</td>
+        </tr>
+        <tr>
+          <td>Ailin Rodriguez</td>
+          <td>Av Margaritas 6578</td>
+          <td>2222235788</td>
+          <td>Puebla</td>
+        </tr>
+        <tr>
+          <td>Fabiloa Gracía</td>
+          <td>Priv 9 Poniente 702</td>
+          <td>2548931525</td>
+          <td>Puebla</td>
+        </tr>
+        <tr>
+          <td>Yessica Robles </td>
+          <td>5 sur 120</td>
+          <td>651855523</td>
+          <td>Puebla</td>
+        </tr>
+        <tr>
+          <td>Sarah Fernández</td>
+          <td>4poniente 605</td>
+          <td>586224522</td>
+          <td>Puebla</td>
+        </tr>
+        <tr>
+          <td>Pedro Fernández</td>
+          <td>4poniente 605</td>
+          <td>586224522</td>
+          <td>Puebla</td>
+        </tr>
+      </tbody>
+      <tfoot>
+      </tfoot>
+    </table>
+  </section>
+	<section style="overflow-x: auto">
+	<h2 id="link-7">Tabla responsiva</h2>
+		<table id= "t06">
+			<thead>
+				<tr>
+					<th>Nombre</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+				</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>Maria Pérez</td>
+				<td>25</td>
+				<td>23</td>
+				<td>68</td>
+				<td>15</td>
+				<td>68</td>
+				<td>74</td>
+				<td>15</td>
+				<td>77</td>
+				<td>23</td>
+				<td>74</td>
+				<td>77</td>
+				<td>68</td>
+				<td>74</td>
+				<td>23</td>
+				<td>15</td>
+				<td>45</td>
+				<td>85</td>
+			</tr>
+			<tr>
+				<td>Juan Paez</td>
+				<td>25</td>
+				<td>56</td>
+				<td>69</td>
+				<td>85</td>
+				<td>24</td>
+				<td>75</td>
+				<td>85</td>
+				<td>69</td>
+				<td>56</td>
+				<td>75</td>
+				<td>85</td>
+				<td>69</td>
+				<td>24</td>
+				<td>85</td>
+				<td>56</td>
+				<td>69</td>
+				<td>74</td>
+			</tr>
+			<tr>
+				<td>Tania Muñoz</td>
+				<td>25</td>
+				<td>42</td>
+				<td>78</td>
+				<td>01</td>
+				<td>78</td>
+				<td>42</td>
+				<td>01</td>
+				<td>13</td>
+				<td>78</td>
+				<td>01</td>
+				<td>42</td>
+				<td>01</td>
+				<td>78</td>
+				<td>01</td>
+				<td>42</td>
+				<td>46</td>
+				<td>45</td>
+			</tr>
+			</tbody>
+			<tfoot></tfoot>
+			
+		</table>
+	</section>
+</main>
+<footer>
+  <h5>Elaborado por Yessica Robles Serrano</h5>
+</footer>
+</body>
+</html>

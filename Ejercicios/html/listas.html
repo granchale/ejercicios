@@ -1,0 +1,221 @@
+ <!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>listas en html</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		dt{
+			font-weight: bold;
+			font-size: 24px;
+			color: darkblue;
+		}
+		h1{
+			font-size: 48px;
+			color:aliceblue;
+		}
+		h2{
+			font-size: 36px;
+			color: #131C7F
+		}
+		h3{
+			color: aliceblue;
+			text-align: center;
+		}
+		header,main, footer{
+			width: 960px;
+			/*height: 100px;*/
+			background-color: #316892;
+			padding: 50px;
+			margin: 0 auto;
+		}
+		header{
+			text-align: center;
+		}
+		h2{
+			text-align: center;
+		}
+		nav{
+			width: 960px;
+			background-color: #81A2B4;
+			height: 35px;
+			margin: 0 auto;
+			padding: 50px;
+
+		}
+		main{
+			background-color: #B1BFC8;
+			height: auto;
+		}
+		footer{
+			background-color: #213643;
+			height: 60px;
+		}
+		section{
+			width: 760px;
+			height: auto;
+			background-color: #DCDCDC;
+			margin: 20px auto;
+			padding: 20px 20px;
+		}
+		ul, ol{
+			margin: 50px;
+		}
+		dl{
+			margin: 20px;
+		}
+		dt{
+			margin:10px;
+		}
+		dd{
+			margin: 20px 50px;
+		}
+		
+		a:link{
+			color: #271BB4;
+			text-decoration: none;
+			font-weigh: bolder;
+		}
+		a:visited{
+			color: #FF7600;
+			text-decoration: none;
+			font-weight: bolder;
+		}
+		a:active{
+			color:#E04345;
+			text-decoration: none;
+			font-weight: bolder;
+		}
+		a:hover{
+			color: #F2F2F2;
+			font-weight: bolder;
+			text-decoration: none;
+		}
+		#ul-nav{
+			display: inline-block;
+			margin-right: 10px;
+    		list-style-type: none;
+   			height: 25px;
+			padding: 5px;
+		}
+		nav ul li{
+			display: inline-block;
+			margin-right: 10px;
+    		list-style-type: none;
+   			height: 25px;
+			padding: 5px;
+			
+		}
+	</style>
+
+</head>
+
+<body>
+	<header>
+	<h1 id="link-1">LISTAS EN HTML</h1>
+	</header>
+	<nav>
+		<ul id="ul-nav" style="margin: 0px">
+		<li><a href="mi_primera_pagina.html" target="new">Mi primera página</a></li>
+		<li><a href="listas.html" target="_blank">Listas</a></li>
+		<li><a href="Tablas.html">Tablas</a></li>
+		<li><a href="Enlaces.html">Enlaces</a></li>
+		<li><a href="imágenes.html">Imágenes</a></li>
+		</ul>
+		<ul style="margin: 0">
+			<li><a href="#link-1">Lista desordenada o viñetas</a></li>
+			<li><a href="#link-2">Listas ordenadas o con viñeta numerada</a></li>
+			<li><a href="#link-3">Lista mixta</a></li>
+			<li><a href="#link-4">Lista de descripción</a></li>
+			<li><a href="#link-5">Lista con viñeta de imagen</a></li>
+		</ul>
+	</nav>
+	<main>
+		<section>
+			<h2 id="link-2">Lista desordenada o viñetas</h2>
+			<ul>
+			<li>México</li>
+			<li>España</li>
+			<li>Argentina</li>
+			<li>Guatemala</li>
+			<li>Italia</li>
+			</ul>
+		</section>
+		<section>
+			<h2>Listas ordenadas o con viñeta numerada</h2>
+			<ol>
+				<li>Grecia</li>
+				<li>Bolivia</li>
+				<li>Canadá</li>
+				<li>Australia</li>
+				<li>México</li>
+			</ol>
+		</section>
+	  <section>
+		<h2 id="link-3">Lista mixta</h2>
+		<ul>
+			<li> México
+				<ol>
+					<li>Puebla</li>
+					<li>Campeche</li>
+					<li>Jalisco</li>
+				</ol>
+				</li>
+			</ul>
+		<ul>
+			  <li> Italia
+			    <ol>
+			      <li>Puebla</li>
+			      <li>Campeche</li>
+			      <li>Jalisco</li>
+		        </ol>
+		      </li>
+	    </ul>
+		<ul>
+			  <li> Canadá
+			    <ol>
+			      <li>Puebla</li>
+			      <li>Campeche</li>
+			      <li>Jalisco</li>
+		        </ol>
+		      </li>
+	    </ul>
+			<ul>
+			  <li> Perú
+			    <ol>
+			      <li>Puebla</li>
+			      <li>Campeche</li>
+			      <li>Jalisco</li>
+		        </ol>
+		      </li>
+	    </ul>
+		</section>
+		<section>
+		<h2 id="link-4">Lista de descripción</h2>
+			<dl>
+				<dt style="font-weight: normal">Hosting</dt>
+					<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus ipsam at, quaerat amet nesciunt. A cum excepturi quam, facilis fugit!</dd>
+				<dt style="font-style: italic"> Dominio</dt>
+					<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, reprehenderit in deleniti esse, sed sapiente?</dd>
+				<dt>Sitio web</dt>
+					<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, ipsa molestias reiciendis. Quis, excepturi minus.</dd>
+			</dl>
+		</section>
+		<section>
+		<h2 id="link-5">Lista con viñeta de imagen</h2>
+			<ul style="list-style-image: url('../619.png')">
+			<li>Maria G</li>
+			<li>Juan J</li>
+			<li>Daniel Osorio</li>
+			<li>Monica Perez</li>
+			</ul>
+		</section>
+	</main>
+	<footer>
+	<h3 style= "font-size:20px"  >Elaborado por Yessica Itzel Robles Serrano</h3>
+	</footer>
+</body>
+</html>

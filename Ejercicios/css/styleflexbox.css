@@ -1,0 +1,267 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+section{
+	margin: 20px 0px;
+	width: 900px;
+	height: auto;
+}
+
+
+.contenedor-flexible{
+	background-color: #EFA8A9;
+	display:flex;
+	
+}
+.contenedor-flexible > div, .contenedor-flexible-1 > div, .contenedor-flexible-2 > div, .contenedor-flexible-3 > div, .contenedor-flexible-4 > div, .contenedor-flexible-5 > div, .contenedor-flexible-6 > div, .contenedor-flexible-7 > div{
+	background-color: #FFD4A9;
+	margin: 10px;
+	padding: 30px;
+	font-size: 32px;
+	width: 400px;
+	height: 50px;
+	text-align: center;
+}
+
+.contenedor-flexible-1 > div{
+	width: 30%;
+}
+
+.contenedor-flexible-3 > div{
+	width: 20%;
+}
+
+.contenedor-flexible-4 >div{
+	height: auto;
+}
+
+.contenedor-flexible-5 >div{
+	width: 100px;
+	height: auto;
+	align-items: baseline;
+}
+
+.contenedor-flexible-6 > div{
+	width: 100px;
+}
+
+.contenedor-flexible-7 > div{
+	width: 200px;
+	height: 200px;
+}
+
+.contenedor-flexible-1{
+	background-color: #F07577;
+	display:flex;
+	flex-direction: column-reverse;
+}
+
+.contenedor-flexible-2{
+	background-color: #D4AC35;
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+
+.contenedor-flexible-3{
+	background-color: #FF7A7C;
+	display: flex;
+	justify-content: center;
+}
+
+.contenedor-flexible-4{
+	background-color: #ED6366;
+	display: flex;
+	height: 400px;
+	align-items: stretch;
+}
+
+.contenedor-flexible-5{
+	background-color: #FF5255;
+	display: flex;
+	height: auto;
+	align-items: baseline;
+}
+
+.contenedor-flexible-6{
+	background-color: #FF5255;
+	display: flex;
+	height: 800px;
+	flex-wrap: wrap;
+	align-content: center;
+}
+
+.contenedor-flexible-7{
+	background-color: #BF7C28;
+	display:flex;
+	height: 600px;
+	justify-content: center;
+	align-items: center;
+}
+
+header {
+    background-color: #F48587;
+    border-width: 80%;
+    color: #FBF7FA;
+    height: 100px;
+	
+	
+}
+header h1 {
+    font-size: 48px;
+    text-align: center;
+}
+
+header, main, footer , section, nav{
+    margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	
+}
+footer{
+	height: auto;
+	background-color: #F48587;
+}
+main {
+    background-color: #F8DF95;
+    padding: 20px;
+    height: auto;
+}
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+footer h5 {
+    margin: 0 auto;
+    width: 50%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+	color: white;
+}
+
+nav ul {
+    display: flex;
+    height: 40px;
+	align-items: baseline;
+	margin-bottom: 20px;
+}
+nav ul li {
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    list-style-type: none;
+    height: 30px;
+	
+}
+
+nav {
+    height: 60px;
+    background-color: #262626;
+    color: #F2F2F2;
+	display: flex;
+	align-items: baseline;
+}
+main section {
+   justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #F48587;
+    padding: 20px;
+    height: auto;
+    overflow: auto;
+	display: flex;
+	
+}
+main section h2 {
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    color: #F2F2F2;
+    font-weight: 400;
+    font-style: italic;
+    font-family: amaranth;
+    font-size: 32px;
+}
+a:link{
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weigh: bolder;
+}
+a:visited{
+	color: #5F61C8;
+	text-decoration: none;
+	font-weight: bolder;
+}
+a:active{
+	color:#E04345;
+	text-decoration: none;
+	font-weight: bolder;
+}
+a:hover{
+	color: #F3C012;
+	font-weight: bolder;
+	text-decoration: none;
+}
+.img_flotante {
+    display: inline;
+	float: left;
+    width: 28%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0px;
+    height: auto;
+	border-radius: 30%;
+}
+.parrafo {
+	display: inline;   
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 17px;
+    font-family: "Gill Sans", "Gill Sans MT","sans-serif";
+    font-style: normal;
+    font-weight: 400;
+	
+}
+.h2{
+	font-family: "Gill Sans", "Gill Sans MT", "sans-serif";
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 45px;
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
